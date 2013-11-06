@@ -1,0 +1,81 @@
+; Packaging information for frans_babies
+name = "Uberman Main Profile"
+description = "Main Install profile"
+exclusive = "1"
+core = "7.x"
+; ----------
+; Dependencies
+; ----------
+; Core
+dependencies[] = block
+dependencies[] = color
+dependencies[] = comment
+dependencies[] = contextual
+dependencies[] = dashboard
+dependencies[] = dblog
+dependencies[] = field
+dependencies[] = field_sql_storage
+dependencies[] = field_ui
+dependencies[] = file
+dependencies[] = filter
+dependencies[] = help
+dependencies[] = image
+dependencies[] = list
+dependencies[] = menu
+dependencies[] = node
+dependencies[] = number
+dependencies[] = options
+dependencies[] = overlay
+dependencies[] = path
+dependencies[] = rdf
+dependencies[] = search
+dependencies[] = shortcut
+dependencies[] = system
+dependencies[] = taxonomy
+dependencies[] = text
+dependencies[] = toolbar
+dependencies[] = update
+dependencies[] = user
+; Other
+dependencies[] = libraries
+dependencies[] = module_filter
+
+; ----------
+; Variables
+; ----------
+variables[admin_theme] = 'seven'
+variables[date_default_timezone] = 'America/New_York'
+variables[filter_fallback_format] = 'plain_text'
+variables[node_admin_theme] = '1'
+variables[node_options_page][0] = 'status'
+variables[theme_default] = 'bartik'
+variables[user_pictures] = '1'
+variables[user_picture_dimensions] = '1024x1024'
+variables[user_picture_file_size] = '800'
+variables[user_picture_style] = 'thumbnail'
+variables[user_register] = 2
+
+
+;--------
+; User Information
+;--------
+
+users[admin][uid] = 1
+users[admin][name] = Baystreet
+users[admin][mail] = admin@example.com
+users[admin][roles] = administrator,manager
+users[admin][status] = 1
+
+users[siteadmin][uid]    = 2
+users[siteadmin][name]   = siteadmin
+users[siteadmin][mail]   = changeme@changeme
+users[siteadmin][roles]  = Admin,Publisher
+users[siteadmin][status] = 0
+
+variables[site_footer] = Profiler Example
+variables[site_frontpage] = node/1
+variables[theme_settings][toggle_node_info_page] = 1
+
+variables[site_name] = Profiler Example
+variables[site_mail] = admin@baystreetsoftware.com
+
